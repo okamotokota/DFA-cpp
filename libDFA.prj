@@ -1,6 +1,6 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="/Users/okamoto/program_doc/DFA-cpp/DFA.prj" location="/Users/okamoto/program_doc/DFA-cpp" name="DFA" target="target.ezdeploy.standalone" target-name="アプリケーション コンパイラ">
-    <param.appname>DFA</param.appname>
+  <configuration file="/Users/okamoto/program_doc/DFA-cpp/libDFA.prj" location="/Users/okamoto/program_doc/DFA-cpp" name="libDFA" target="target.ezdeploy.library" target-name="ライブラリ コンパイラ">
+    <param.appname>libDFA</param.appname>
     <param.icon />
     <param.icons />
     <param.version>1.0</param.version>
@@ -11,7 +11,7 @@
     <param.description />
     <param.screenshot />
     <param.guid />
-    <param.installpath.string>/DFA/</param.installpath.string>
+    <param.installpath.string>/libDFA/</param.installpath.string>
     <param.installpath.combo>option.installpath.systemwideapp</param.installpath.combo>
     <param.logo />
     <param.install.notes />
@@ -24,16 +24,18 @@ MR/R2023a/runtime/maci64:MR/R2023a/sys/os/maci64:MR/R2023a/bin/maci64
 If it is defined, set it to the following:
 
 ${DYLD_LIBRARY_PATH}:MR/R2023a/runtime/maci64:MR/R2023a/sys/os/maci64:MR/R2023a/bin/maci64</param.target.install.notes>
-    <param.intermediate>${PROJECT_ROOT}/DFA/for_testing</param.intermediate>
-    <param.files.only>${PROJECT_ROOT}/DFA/for_redistribution_files_only</param.files.only>
-    <param.output>${PROJECT_ROOT}/DFA/for_redistribution</param.output>
-    <param.logdir>${PROJECT_ROOT}/DFA</param.logdir>
+    <param.intermediate>${PROJECT_ROOT}/libDFA/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/libDFA/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/libDFA/for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}/libDFA</param.logdir>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
-    <param.target.type>subtarget.standalone</param.target.type>
+    <param.target.type>subtarget.library.c</param.target.type>
     <param.support.packages />
-    <param.web.mcr>false</param.web.mcr>
-    <param.package.mcr>true</param.package.mcr>
+    <param.namespace />
+    <param.classorg />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
     <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
     <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
@@ -41,15 +43,20 @@ ${DYLD_LIBRARY_PATH}:MR/R2023a/runtime/maci64:MR/R2023a/sys/os/maci64:MR/R2023a/
     <param.windows.command.prompt>false</param.windows.command.prompt>
     <param.create.log>false</param.create.log>
     <param.log.file />
-    <param.native.matlab>false</param.native.matlab>
-    <param.checkbox>false</param.checkbox>
-    <param.example />
-    <param.help.text>Syntax 
-	  -? 
-	 
- Input Arguments 
-	 -?  print help on how to use the application 
-	 input arguments</param.help.text>
+    <param.user.only.registration>false</param.user.only.registration>
+    <param.assembly.net.version>option.net.version.four</param.assembly.net.version>
+    <param.net.enable.remoting>false</param.net.enable.remoting>
+    <param.assembly.type>false</param.assembly.type>
+    <param.encryption.key.file />
+    <param.net.tsa.enable>false</param.net.tsa.enable>
+    <param.net.tsa.assembly />
+    <param.net.tsa.interface />
+    <param.net.tsa.namespace />
+    <param.net.tsa.superclass>Class1</param.net.tsa.superclass>
+    <param.net.tsa.metadata />
+    <param.net.tsa.metadata.assembly>/Users/okamoto/program_doc/DFA-cpp</param.net.tsa.metadata.assembly>
+    <param.net.saved.interface />
+    <param.cpp.api>option.cpp.all</param.cpp.api>
     <unset>
       <param.icon />
       <param.icons />
@@ -73,6 +80,10 @@ ${DYLD_LIBRARY_PATH}:MR/R2023a/runtime/maci64:MR/R2023a/sys/os/maci64:MR/R2023a/
       <param.user.defined.mcr.options />
       <param.target.type />
       <param.support.packages />
+      <param.namespace />
+      <param.classorg />
+      <param.web.mcr />
+      <param.package.mcr />
       <param.no.mcr />
       <param.web.mcr.name />
       <param.package.mcr.name />
@@ -80,21 +91,39 @@ ${DYLD_LIBRARY_PATH}:MR/R2023a/runtime/maci64:MR/R2023a/sys/os/maci64:MR/R2023a/
       <param.windows.command.prompt />
       <param.create.log />
       <param.log.file />
-      <param.native.matlab />
-      <param.checkbox />
-      <param.example />
+      <param.user.only.registration />
+      <param.assembly.net.version />
+      <param.net.enable.remoting />
+      <param.assembly.type />
+      <param.encryption.key.file />
+      <param.net.tsa.enable />
+      <param.net.tsa.assembly />
+      <param.net.tsa.interface />
+      <param.net.tsa.namespace />
+      <param.net.tsa.superclass />
+      <param.net.tsa.metadata />
+      <param.net.tsa.metadata.assembly />
+      <param.net.saved.interface />
+      <param.cpp.api />
     </unset>
-    <fileset.main>
+    <fileset.exports>
       <file>${PROJECT_ROOT}/DFA.m</file>
-    </fileset.main>
+    </fileset.exports>
+    <fileset.classes>
+      <entity.package name="">
+        <entity.class name="Class1">
+          <file>${PROJECT_ROOT}/DFA.m</file>
+        </entity.class>
+      </entity.package>
+    </fileset.classes>
     <fileset.resources />
-    <fileset.package />
     <fileset.depfun />
+    <fileset.package />
+    <fileset.examples />
+    <fileset.documentation />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}/DFA/for_testing" name="splash.png" optional="false">/Users/okamoto/program_doc/DFA-cpp/DFA/for_testing/splash.png</file>
-      <file location="${PROJECT_ROOT}/DFA/for_testing" name="run_DFA.sh" optional="false">/Users/okamoto/program_doc/DFA-cpp/DFA/for_testing/run_DFA.sh</file>
-      <file location="${PROJECT_ROOT}/DFA/for_testing" name="DFA.app" optional="false">/Users/okamoto/program_doc/DFA-cpp/DFA/for_testing/DFA.app</file>
-      <file location="${PROJECT_ROOT}/DFA/for_testing" name="readme.txt" optional="true">/Users/okamoto/program_doc/DFA-cpp/DFA/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/libDFA/for_testing" name="libDFA.dylib" optional="false">/Users/okamoto/program_doc/DFA-cpp/libDFA/for_testing/libDFA.dylib</file>
+      <file location="${PROJECT_ROOT}/libDFA/for_testing" name="libDFA.h" optional="false">/Users/okamoto/program_doc/DFA-cpp/libDFA/for_testing/libDFA.h</file>
     </build-deliverables>
     <workflow />
     <matlab>

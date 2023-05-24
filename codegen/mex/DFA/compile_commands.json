@@ -1,0 +1,128 @@
+[
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  DFA_data.cpp -o build/maci64/DFA_data.o",
+    "file": "DFA_data.cpp",
+    "output": "build/maci64/DFA_data.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  rt_nonfinite.cpp -o build/maci64/rt_nonfinite.o",
+    "file": "rt_nonfinite.cpp",
+    "output": "build/maci64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  DFA_initialize.cpp -o build/maci64/DFA_initialize.o",
+    "file": "DFA_initialize.cpp",
+    "output": "build/maci64/DFA_initialize.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  DFA_terminate.cpp -o build/maci64/DFA_terminate.o",
+    "file": "DFA_terminate.cpp",
+    "output": "build/maci64/DFA_terminate.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  DFA.cpp -o build/maci64/DFA.o",
+    "file": "DFA.cpp",
+    "output": "build/maci64/DFA.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  linspace.cpp -o build/maci64/linspace.o",
+    "file": "linspace.cpp",
+    "output": "build/maci64/linspace.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  colon.cpp -o build/maci64/colon.o",
+    "file": "colon.cpp",
+    "output": "build/maci64/colon.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  polyfit.cpp -o build/maci64/polyfit.o",
+    "file": "polyfit.cpp",
+    "output": "build/maci64/polyfit.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  warning.cpp -o build/maci64/warning.o",
+    "file": "warning.cpp",
+    "output": "build/maci64/warning.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  polyval.cpp -o build/maci64/polyval.o",
+    "file": "polyval.cpp",
+    "output": "build/maci64/polyval.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  mean.cpp -o build/maci64/mean.o",
+    "file": "mean.cpp",
+    "output": "build/maci64/mean.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  sum.cpp -o build/maci64/sum.o",
+    "file": "sum.cpp",
+    "output": "build/maci64/sum.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  var.cpp -o build/maci64/var.o",
+    "file": "var.cpp",
+    "output": "build/maci64/var.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_DFA_api.cpp -o build/maci64/_coder_DFA_api.o",
+    "file": "interface/_coder_DFA_api.cpp",
+    "output": "build/maci64/_coder_DFA_api.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_DFA_mex.cpp -o build/maci64/_coder_DFA_mex.o",
+    "file": "interface/_coder_DFA_mex.cpp",
+    "output": "build/maci64/_coder_DFA_mex.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  sumMatrixIncludeNaN.cpp -o build/maci64/sumMatrixIncludeNaN.o",
+    "file": "sumMatrixIncludeNaN.cpp",
+    "output": "build/maci64/sumMatrixIncludeNaN.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  eml_int_forloop_overflow_check.cpp -o build/maci64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.cpp",
+    "output": "build/maci64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  round.cpp -o build/maci64/round.o",
+    "file": "round.cpp",
+    "output": "build/maci64/round.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  log10.cpp -o build/maci64/log10.o",
+    "file": "log10.cpp",
+    "output": "build/maci64/log10.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  interface/_coder_DFA_info.cpp -o build/maci64/_coder_DFA_info.o",
+    "file": "interface/_coder_DFA_info.cpp",
+    "output": "build/maci64/_coder_DFA_info.o"
+  },
+  {
+    "directory": "/Users/okamoto/program_doc/DFA-cpp/codegen/mex/DFA",
+    "command": "/usr/bin/xcrun -sdk macosx13.3 clang++ -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I \".\" -I \"/Users/okamoto/program_doc/DFA-cpp\" -I \"./interface\" -I \"/Applications/MATLAB_R2023a.app/extern/include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c  /Applications/MATLAB_R2023a.app/extern/version/cpp_mexapi_version.cpp -o build/maci64/cpp_mexapi_version.o",
+    "file": "/Applications/MATLAB_R2023a.app/extern/version/cpp_mexapi_version.cpp",
+    "output": "build/maci64/cpp_mexapi_version.o"
+  }
+]

@@ -1,15 +1,17 @@
-function [alpha,dfa_out] = DFA(data,scmin,scmax,scres)
+function [alpha,dfa_out] = DFA()
 
     % scmin(最小スケール)，scmax(最大スケール)，scres(スケール数)を定義し，
     % 傾きαと，h,p（t検定結果）を出力する．
     % dfa_out.txtに標準偏差と回帰直線のデータを出力
 
-%     data=readmatrix("sample.txt");
-    X = cumsum(data - mean(data)); % ノイズの累積和をとりランダムウォーク型に変換
+    data_dfa=readmatrix("sample.txt");
+    X = cumsum(data_dfa - mean(data_dfa)); % ノイズの累積和をとりランダムウォーク型に変換
     X = transpose(X);
 
     % サンプルの組を指定，ここではlog10のスケールで定義
-    % scmin = 4; %最小スケ
+    scmin = 4; %最小スケーる
+    scmax=125;
+    scres=20;
 
     exponents = linspace(log10(scmin), log10(scmax), scres); % log10での等間隔なスケールの設定
     scale = round(10.^exponents);
@@ -40,7 +42,7 @@ function [alpha,dfa_out] = DFA(data,scmin,scmax,scres)
     end
 
     C = polyfit(log10(scale), log10(F), 1); %範囲の大きさごとの標準偏差をプロットし，線形近似する
-    alpha = C(1);
+    alpha = C(1)
     RegLine = polyval(C, log10(scale)); %回帰直線の導出
 
     y=log10(F);
@@ -63,16 +65,18 @@ function [alpha,dfa_out] = DFA(data,scmin,scmax,scres)
     % % ylim(axes1,[0 5]);
     % hold(axes1,'all');
 % 
-%     plot(log10(scale), RegLine, 'k')% 回帰直線のプロット
-%     hold on
-%     plot(log10(scale), log10(F), 'o')% 範囲ごとの標準偏差をプロット
-%     hold off
-%     xlabel('log_{10}[n]')
-%     ylabel('log_{10}[F(n)]')
-%     legend(['Slope \alpha = ', num2str(alpha)], 'Data', 'Location', 'northwest')
-% 
-%     savefig(gcf, 'DFA_result.fig')
+    plot(log10(scale), RegLine, 'k')% 回帰直線のプロット
+    hold on
+    plot(log10(scale), log10(F), 'o')% 範囲ごとの標準偏差をプロット
+    hold off
+    xlabel('log_{10}[n]')
+    ylabel('log_{10}[F(n)]')
+    legend(['Slope \alpha = ', num2str(alpha)], 'Data', 'Location', 'northwest')
+
+    savefig(gcf, 'DFA_result.fig')
 
     dfa_out=[log10(scale)',RegLine',log10(F)'];
+
+    writematrix(dfa_out)
 
 % end

@@ -1,0 +1,62 @@
+# CompilerName=clang
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root/build/maci64
+matlabdir = /Applications/MATLAB_R2023a.app
+startdir = /Users/okamoto/program_doc/DFA-cpp
+
+# Toolchain information
+cc = /usr/bin/xcrun -sdk macosx13.3 clang
+cxx = /usr/bin/xcrun -sdk macosx13.3 clang++
+linker = /usr/bin/xcrun -sdk macosx13.3 clang
+linkerxx = /usr/bin/xcrun -sdk macosx13.3 clang++
+
+cflags =  -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c99 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c 
+
+cxxflags =  -fno-common -arch x86_64 -mmacosx-version-min=10.15 -fexceptions -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fobjc-arc -std=c++14 -stdlib=libc++ -DMATLAB_MEX_FILE  -O2 -fwrapv -DNDEBUG -fvisibility=hidden -std=c++11 -I "$root" -I "$startdir" -I "$root/interface" -I "$matlabdir/extern/include" -I "." -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=DFA_mex -DMW_NEEDS_VERSION_H -c 
+
+ldflags =  -Wl,-twolevel_namespace -undefined error -arch x86_64 -mmacosx-version-min=10.15 -Wl,-syslibroot,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -framework Cocoa -bundle  -stdlib=libc++ -L"$matlabdir/bin/maci64" -lmx -lmex -lmat -L"$matlabdir/extern/bin/maci64" -lMatlabDataArray -lMatlabEngine  -Wl,-rpath,@loader_path -o DFA_mex.mexmaci64 -L"$matlabdir/bin/maci64" -lmwlapack -lmwblas -lemlrt -lcovrt -lut -lmwmathutil 
+
+linkobjs = 
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -o $out
+
+rule cxx
+    command = $cxx $cxxflags $in -o $out
+
+rule link
+    command = $linker $in $linkobjs $ldflags
+
+rule linkxx
+    command = $linkerxx $in $linkobjs $ldflags
+
+# Build
+build $builddir/DFA_data.o : cxx $root/DFA_data.cpp
+build $builddir/rt_nonfinite.o : cxx $root/rt_nonfinite.cpp
+build $builddir/DFA_initialize.o : cxx $root/DFA_initialize.cpp
+build $builddir/DFA_terminate.o : cxx $root/DFA_terminate.cpp
+build $builddir/DFA.o : cxx $root/DFA.cpp
+build $builddir/linspace.o : cxx $root/linspace.cpp
+build $builddir/colon.o : cxx $root/colon.cpp
+build $builddir/polyfit.o : cxx $root/polyfit.cpp
+build $builddir/warning.o : cxx $root/warning.cpp
+build $builddir/polyval.o : cxx $root/polyval.cpp
+build $builddir/mean.o : cxx $root/mean.cpp
+build $builddir/sum.o : cxx $root/sum.cpp
+build $builddir/var.o : cxx $root/var.cpp
+build $builddir/_coder_DFA_api.o : cxx $root/interface/_coder_DFA_api.cpp
+build $builddir/_coder_DFA_mex.o : cxx $root/interface/_coder_DFA_mex.cpp
+build $builddir/sumMatrixIncludeNaN.o : cxx $root/sumMatrixIncludeNaN.cpp
+build $builddir/eml_int_forloop_overflow_check.o : cxx $root/eml_int_forloop_overflow_check.cpp
+build $builddir/round.o : cxx $root/round.cpp
+build $builddir/log10.o : cxx $root/log10.cpp
+build $builddir/_coder_DFA_info.o : cxx $root/interface/_coder_DFA_info.cpp
+build $builddir/cpp_mexapi_version.o : cxx $matlabdir/extern/version/cpp_mexapi_version.cpp
+
+# Link
+build $root/DFA_mex.mexmaci64 : linkxx $builddir/DFA_data.o $builddir/rt_nonfinite.o $builddir/DFA_initialize.o $builddir/DFA_terminate.o $builddir/DFA.o $builddir/linspace.o $builddir/colon.o $builddir/polyfit.o $builddir/warning.o $builddir/polyval.o $builddir/mean.o $builddir/sum.o $builddir/var.o $builddir/_coder_DFA_api.o $builddir/_coder_DFA_mex.o $builddir/sumMatrixIncludeNaN.o $builddir/eml_int_forloop_overflow_check.o $builddir/round.o $builddir/log10.o $builddir/_coder_DFA_info.o $builddir/cpp_mexapi_version.o 
